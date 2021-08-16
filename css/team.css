@@ -120,6 +120,34 @@ a {
     display: none;
 }
 
+.yans {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.title_jamaat {
+    font-size: 40px;
+    font-weight: bold;
+    color: #444b57;
+
+    padding: 10px;
+}
+
+.yans .detail-box-5 {
+    grid-column: 1/4;
+    display: flex;
+
+    width: 100%;
+    max-width: 1170px;
+
+    padding-top: 10px;
+
+
+}
+
 .detail-box-img {
     width: 300px;
     height: auto;
@@ -181,7 +209,47 @@ a {
     font-size: 0.9rem;
 }
 
-.view-work-btn {
+.yans .btn {
+
+    margin: 20px 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 30px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+
+
+    transition: background .5s linear;
+
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.yans .btn--red {
+    border-radius: 47px;
+    font-weight: bold;
+
+    border: 2px solid #000000;
+
+}
+
+.yans .btn--red:hover {
+    color: #000000;
+    background-color: #00a7ff;
+    font-weight: bold;
+}
+
+/* .view-work-btn {
     margin-top: 5px;
     width: 150px;
     height: 45px;
@@ -201,7 +269,7 @@ a {
     color: #fff;
     background-color: #133c87;
     transition: all ease 0.3s;
-}
+} */
 
 .cancel {
     position: absolute;
@@ -217,7 +285,7 @@ a {
     background-color: #c70000;
 }
 
-.cancel:hover{
+.cancel:hover {
     background-color: #a50303;
 }
 
@@ -355,6 +423,12 @@ a {
 }
 
 @media(max-width:450px) {
+
+    .title_jamaat {
+        font-size: 20px;
+    }
+
+
     .team-box-container {
         grid-template-columns: 1fr;
 

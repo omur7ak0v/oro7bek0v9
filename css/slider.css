@@ -300,7 +300,7 @@
 	text-decoration: none;
 
 
-	transition: background .5s linear;
+	transition: background .5s ;
 
 	outline: none !important;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
